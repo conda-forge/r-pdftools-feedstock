@@ -38,11 +38,13 @@ requirements:
   host:
     - r-base
     - r-rcpp >=0.12.12
+    - r-qpdf
     - poppler
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
     - r-rcpp >=0.12.12
+    - r-qpdf
     - poppler
 
 test:
