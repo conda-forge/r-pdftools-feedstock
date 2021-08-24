@@ -23,7 +23,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 poppler:
-- '21.03'
+- '21.08'
 r_base:
 - '4.0'
 target_platform:
