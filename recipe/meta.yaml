@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pdftools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pdftools/pdftools_{{ version }}.tar.gz
-  sha256: 514532d9ede84d90ba584371c648f7adca77380b4532a1170f250cd076e45618
+  sha256: 2651283b68826ed8dc73f33b41ae268332e4759d5efa3d06e0a4b6eb85c3d4d1
 
 build:
   merge_build_host: true  # [win]
