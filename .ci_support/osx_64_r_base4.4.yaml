@@ -5,7 +5,7 @@ MACOSX_SDK_VERSION:
 c_compiler:
 - clang
 c_compiler_version:
-- '16'
+- '17'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -19,17 +19,15 @@ cran_mirror:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '16'
+- '17'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 pin_run_as_build:
-  poppler:
-    max_pin: x.x
   r-base:
     min_pin: x.x
     max_pin: x.x
 poppler:
-- '24.07'
+- '24.08'
 r_base:
 - '4.4'
 target_platform:
