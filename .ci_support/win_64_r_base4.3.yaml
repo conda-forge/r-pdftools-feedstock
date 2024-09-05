@@ -6,6 +6,8 @@ channel_targets:
 - conda-forge main
 cran_mirror:
 - https://cran.r-project.org
+libiconv:
+- '1'
 m2w64_c_compiler:
 - gcc
 m2w64_c_compiler_version:
@@ -18,8 +20,6 @@ pin_run_as_build:
   r-base:
     min_pin: x.x
     max_pin: x.x
-poppler:
-- '24.08'
 r_base:
 - '4.3'
 target_platform:
