@@ -10,6 +10,8 @@ source:
     - {{ cran_mirror }}/src/contrib/pdftools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pdftools/pdftools_{{ version }}.tar.gz
   sha256: 0b9d7b2100a6d7959c56e144285b9638ca6ff4a7f484a31ff814a99d71482c64
+  patches:
+    - patches/0001-add-pthread.patch
 
 build:
   number: 8
@@ -19,15 +21,15 @@ build:
 
 requirements:
   build:
-    - cross-r-base {{ r_base }}  # [build_platform != target_platform]
-    - r-qpdf                     # [build_platform != target_platform]
-    - r-rcpp                     # [build_platform != target_platform]
-    - {{ compiler('c') }}        # [not win]
-    - {{ stdlib("c") }}          # [not win]
-    - {{ compiler('cxx') }}      # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
-    - {{ stdlib("c") }}                # [win]
-    - {{ compiler('m2w64_cxx') }}        # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
+    - r-qpdf                       # [build_platform != target_platform]
+    - r-rcpp                       # [build_platform != target_platform]
+    - {{ compiler('c') }}          # [not win]
+    - {{ stdlib("c") }}            # [not win]
+    - {{ compiler('cxx') }}        # [not win]
+    - {{ compiler('m2w64_c') }}    # [win]
+    - {{ stdlib("c") }}            # [win]
+    - {{ compiler('m2w64_cxx') }}  # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}sed               # [win]
     - {{ posix }}grep              # [win]
