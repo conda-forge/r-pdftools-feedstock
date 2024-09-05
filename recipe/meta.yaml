@@ -44,12 +44,13 @@ requirements:
     - r-base
     - r-rcpp >=0.12.12
     - r-qpdf
-    - poppler
+    - poppler                      # [not win]
+    - libiconv                     # [win]
   run:
     - r-base
     - r-rcpp >=0.12.12
     - r-qpdf
-    - poppler
+    - poppler                      # [not win]
 
 test:
   commands:
