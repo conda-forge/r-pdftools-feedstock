@@ -3,11 +3,15 @@ About r-pdftools-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pdftools-feedstock/blob/main/LICENSE.txt)
 
-Home: https://ropensci.org/blog/2016/03/01/pdftools-and-jeroen (blog) https://github.com/ropensci/pdftools#readme (devel) https://poppler.freedesktop.org (upstream)
+Home: https://ropensci.r-universe.dev/pdftools
 
 Package license: MIT
 
 Summary: Utilities based on 'libpoppler' for extracting text, fonts, attachments and  metadata from a PDF file. Also supports high quality rendering of PDF documents info PNG, JPEG, TIFF format, or into raw bitmap vectors for further processing in R.
+
+Development: https://github.com/ropensci/pdftools
+
+Documentation: https://docs.ropensci.org/pdftools/
 
 Current build status
 ====================

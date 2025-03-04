@@ -1,6 +1,6 @@
-From a361d64eac36b610b651ca079f90b40d745f4597 Mon Sep 17 00:00:00 2001
+From b2e57082cb30e0810ab1e89b5ba32e635f3bbc5d Mon Sep 17 00:00:00 2001
 From: Mervin Fansler <mervin.fansler@bric.ku.dk>
-Date: Thu, 5 Sep 2024 10:12:31 +0200
+Date: Tue, 4 Mar 2025 09:26:44 +0100
 Subject: [PATCH] add pthread
 
 ---
@@ -8,15 +8,15 @@ Subject: [PATCH] add pthread
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/src/Makevars.win b/src/Makevars.win
-index b1a22f9..43fec3a 100644
+index 5a6fd9a..321deb0 100644
 --- a/src/Makevars.win
 +++ b/src/Makevars.win
-@@ -8,7 +8,7 @@ PKG_LIBS= \
- 	-L$(RWINLIB)/lib${subst gcc,,${COMPILED_BY}}${R_ARCH} \
- 	-L$(RWINLIB)/lib \
- 	-lpoppler-cpp -lpoppler -llcms2 -ljpeg -lpng16 -ltiff -lopenjp2 \
--	-lfreetype -lfreetype -lbz2 -liconv -lz
-+	-lfreetype -lfreetype -lbz2 -liconv -lz -pthread
- 
- all: clean winlibs
+@@ -11,7 +11,7 @@ else
+ RWINLIB = ../windows/poppler
+ PKG_CPPFLAGS = -I$(RWINLIB)/include/poppler/cpp -I$(RWINLIB)/include/poppler
+ PKG_LIBS = -L$(RWINLIB)/lib${subst gcc,,${COMPILED_BY}}${R_ARCH} -L$(RWINLIB)/lib \
+-	-lpoppler-cpp -lpoppler -llcms2 -ljpeg -lpng16 -ltiff -lopenjp2 -lfreetype -lfreetype -lbz2 -liconv -lz
++	-lpoppler-cpp -lpoppler -llcms2 -ljpeg -lpng16 -ltiff -lopenjp2 -lfreetype -lfreetype -lbz2 -liconv -lz -pthread
+ POPPLERDATA = $(RWINLIB)/share/poppler
+ endif
 
