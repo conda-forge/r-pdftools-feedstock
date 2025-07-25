@@ -50,6 +50,7 @@ requirements:
     - r-qpdf
     - poppler                      # [not win]
     - libiconv                     # [win]
+    - zlib
   run:
     - r-base
     - r-rcpp >=0.12.12
