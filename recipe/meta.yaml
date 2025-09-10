@@ -14,7 +14,7 @@ source:
     - patches/0001-add-pthread.patch
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,6 +50,7 @@ requirements:
     - r-qpdf
     - poppler                      # [not win]
     - libiconv                     # [win]
+    - zlib
   run:
     - r-base
     - r-rcpp >=0.12.12
