@@ -1,4 +1,4 @@
-{% set version = "3.6.0" %}
+{% set version = "3.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,12 +9,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pdftools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pdftools/pdftools_{{ version }}.tar.gz
-  sha256: 4529a7669baaadbfbbb328c8c75d34c86f51cab5071945ff9cedd8f633f421c4
+  sha256: 07f7ef60086c63e98324835072435861bd2e94b0ebf5df5d68d11412f9cf6e0d
   patches:
     - patches/0001-add-pthread.patch
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
