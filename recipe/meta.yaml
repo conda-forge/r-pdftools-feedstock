@@ -48,7 +48,7 @@ requirements:
     - r-base
     - r-rcpp >=0.12.12
     - r-qpdf
-    - poppler                      # [not win]
+    - poppler
     - libiconv                     # [win]
     - expat
     - zlib
@@ -56,7 +56,6 @@ requirements:
     - r-base
     - r-rcpp >=0.12.12
     - r-qpdf
-    - poppler                      # [not win]
 
 test:
   commands:
